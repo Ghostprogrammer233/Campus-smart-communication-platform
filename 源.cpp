@@ -123,12 +123,12 @@ void check_post() {
 void Activity(){
 		int choice_5;
 		bool switch_5 = true;
-		cout << "欢迎进入校园活动板块\n请选择您要进行什么操作：" << endl;
-		cout << "1.发布校园活动" << endl;
-		cout << "2.查看校园活动" << endl;
-		cout << "3.退回上一个界面" << endl;
 
 		while (switch_5) {
+			cout << "欢迎进入校园活动板块\n请选择您要进行什么操作：" << endl;
+			cout << "1.发布校园活动" << endl;
+			cout << "2.查看校园活动" << endl;
+			cout << "3.退回上一个界面" << endl;
 			cin >> choice_5;
 			switch (choice_5) {
 			case 1:
@@ -174,12 +174,12 @@ void Learn()
 {
 	bool switch_6 = true;
 	int choice_4;
-	cout << "欢迎进入校园学习板块\n请选择您要进行什么操作：" << endl;
-	cout << "1.上传学习资料" << endl;
-	cout << "2.查看往年学习资料" << endl;
-	cout << "3.退回上一个界面" << endl;
 
 	while (switch_6) {
+		cout << "欢迎进入校园学习板块\n请选择您要进行什么操作：" << endl;
+		cout << "1.上传学习资料" << endl;
+		cout << "2.查看往年学习资料" << endl;
+		cout << "3.退回上一个界面" << endl;
 		cin >> choice_4;
 		switch (choice_4) {
 		case 1:
@@ -201,6 +201,7 @@ void upload() {
 	string content_2;
 	cout << "欢迎来到发布页面" << endl;
 	cout << "请先输入标题序号，再输入标题点击“Enter”以结束发布" << endl;
+	cin >> id_2;
 	cin >> title_2;
 	cout << "请输入资料内容,点击“Enter”以结束发布" << endl;
 	cin >> content_2;
